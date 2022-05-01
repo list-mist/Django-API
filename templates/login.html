@@ -1,0 +1,16 @@
+{% extends 'register.html' %}
+
+{% block content %}
+<centre>
+    {{msg}}
+    <br>
+    <form method="POST">
+        {% csrf_token %}
+        {% for fm in form %}
+        {{fm.label_tag}}{{fm}}{{fm.errors|striptags}}
+        <br><br><br>
+        {% endfor %}
+      <input type="submit" value="Submit"></input>
+    </form>
+</centre>
+{% endblock %}

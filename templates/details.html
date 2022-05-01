@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <centre>
+        <table border="1px black">
+        <tr>
+            <th>Username</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>is_staff</th>
+            <th>is_active</th>
+            <th>date_joined</th>
+            <th>last_login</th>
+        </tr>
+        <tr>
+            <td>{{data.username}}</td>
+            <td>{{data.first_name}}</td>
+            <td>{{data.last_name}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.is_staff}}</td>
+            <td>{{data.is_active}}</td>
+            <td>{{data.date_joined}}</td>
+            <td>{{data.last_login}}</td>
+        </tr>
+        </table>
+        <br>
+        <a href="/logout">Logout</a>
+        <a href="/edit">Edit details</a>
+    </centre>
+</body>
+</html>
